@@ -1,6 +1,6 @@
 # ChatBot Web App
 
-Una aplicación web de chatbot interactivo desarrollada con **Python**, **Flask**, **HTML/CSS** y **JavaScript**. Este proyecto es mi primer experimento completo en desarrollo web full-stack y sirve como demostración de mi capacidad para integrar **frontend** y **backend**, manejar solicitudes HTTP, y trabajar con APIs internas.
+Una aplicación web de chatbot interactivo desarrollada con **Python**, **Flask**, **HTML/CSS** y **JavaScript**. Este es mi primer proyecto completo en desarrollo web full-stack y sirve como demostración de mi capacidad para integrar **frontend** y **backend**, manejar solicitudes HTTP, y trabajar con APIs internas.
 
 ---
 
