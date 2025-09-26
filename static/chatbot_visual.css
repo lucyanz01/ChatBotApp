@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #e0e0e0, #8f99ad)
+}
+
+.page-header {
+    background-color: #e5e3e9;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 2px 6px #00000033;
+}
+
+.page-header h1 {
+    padding: 30px 0;
+    padding-left: 20px;
+}
+
+.chatbot-container {
+    width: 80%;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #00000066;
+    background-color: #e7e7e7;
+    padding: 20px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-intro {
+    display: flex;
+    text-align: center;
+    margin: 50px;
+    justify-content: center;
+}
+
+.chatbot-intro h2 {
+    margin: 0 0 15px 0;
+    font-size: 41px;
+}
+
+.chatbot-start {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-start h3 {
+    margin: 50px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.chatbot-input {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center; 
+    margin: 50px 0 0 0;              
+    padding: 10px 20px;        
+    border-radius: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#entrada {
+    font-size: 18px;
+    padding: 12px 15px;
+    border-radius: 10px; 
+    border: 1px solid #999; 
+    outline: none; 
+    box-shadow: 0 2px 6px #00000033;
+    flex: 1;
+    min-width: 0;
+}
+
+#entrada::placeholder {
+    font-size: 18px;
+    color: #666; 
+}
+
+#entrada:focus {
+    border-color: #60757c;
+    box-shadow: 0 0 5px #51596d80;
+}
+
+#enviar {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #71878f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#enviar:hover {
+    background-color: #88abb8;
+}
+
+#mensajes {
+    flex: 1;
+    overflow-y: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-msg, .bot-msg {
+    margin: 5px 0;
+    padding: 15px 10px;
+    border-radius: 13px;
+    max-width: 80%;
+    animation: fadeIn 0.3s ease;
+    box-shadow: 0 2px 6px #00000033;
+}
+
+.user-msg {
+    background-color: #71878f;
+    color: white;
+    align-self: flex-end;
+    margin: 20px;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.bot-msg {
+    background-color: #3e5f6b;
+    color: white;
+    align-self: flex-start;
+    margin: 20px;
+}
+
+/* animaciones */
+
+@keyframes fadeIn {
+     from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
